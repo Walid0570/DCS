@@ -1,0 +1,87 @@
+{
+  "top_apps": [
+    {
+      "app_id": 1,
+      "nom": "Portail Étudiant",
+      "total": 4782.35
+    },
+    {
+      "app_id": 6,
+      "nom": "Messagerie",
+      "total": 3440.52
+    },
+    {
+      "app_id": 5,
+      "nom": "Parc Informatique",
+      "total": 3352.14
+    },
+    {
+      "app_id": 3,
+      "nom": "Intranet",
+      "total": 2824.17
+    },
+    {
+      "app_id": 2,
+      "nom": "Gestion Absences",
+      "total": 2578.42
+    }
+  ],
+  "monthly_totals": [
+    {
+      "month": "2025-01",
+      "total": 1365.2
+    },
+    {
+      "month": "2025-02",
+      "total": 1447.04
+    },
+    {
+      "month": "2025-03",
+      "total": 1492.81
+    },
+    {
+      "month": "2025-04",
+      "total": 1527.8
+    },
+    {
+      "month": "2025-05",
+      "total": 1543.22
+    },
+    {
+      "month": "2025-06",
+      "total": 1563.53
+    }
+  ],
+  "resource_comparison": [
+    {
+      "month": "2025-01",
+      "stockage": 646.67,
+      "reseau": 650.44
+    },
+    {
+      "month": "2025-02",
+      "stockage": 692.62,
+      "reseau": 680.67
+    },
+    {
+      "month": "2025-03",
+      "stockage": 711.0699999999999,
+      "reseau": 705.47
+    },
+    {
+      "month": "2025-04",
+      "stockage": 734.65,
+      "reseau": 718.37
+    },
+    {
+      "month": "2025-05",
+      "stockage": 747.51,
+      "reseau": 719.56
+    },
+    {
+      "month": "2025-06",
+      "stockage": 759.63,
+      "reseau": 726.83
+    }
+  ]
+}
