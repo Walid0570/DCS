@@ -1,13 +1,13 @@
 -- Création des tables
 CREATE TABLE IF NOT EXISTS application (
   app_id INTEGER PRIMARY KEY,
-  nom TEXT NOT NULL
+  nom Varchar(80) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS ressource (
   res_id INTEGER PRIMARY KEY,
-  nom TEXT,
-  unite TEXT
+  nom Varchar(30),
+  unite VARCHAR(10)
 );
 
 CREATE TABLE IF NOT EXISTS consommation (
