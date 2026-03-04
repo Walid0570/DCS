@@ -38,3 +38,60 @@ body {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+table thead th {
+  background: linear-gradient(180deg,#f7f7f7,#eaeaea);
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+}
+
+table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table tbody tr:hover {
+  background-color: #f1f9ff;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* Small screens: enable horizontal scroll for tables */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Make buttons and headings a bit cleaner */
+h1 {
+  font-size: 20px;
+  margin: 12px 0;
+}
+
+.tab button {
+  padding: 10px 14px;
+}
+
+.tablinks.active {
+  background-color: #d0d7df;
+}

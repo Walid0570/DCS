@@ -20,21 +20,21 @@ LIMIT 5
 ''')
 top = [{'app_id': r[0], 'nom': r[1], 'total': float(r[2] or 0)} for r in cur.fetchall()]
 
-# Monthly totals Jan-Jun 2025
+# Monthly totals Jan 2025 -> Feb 2026
 cur.execute('''
 SELECT substr(mois,1,7) as month, SUM(volume) as total
 FROM consommation
-WHERE mois >= '2025-01-01' AND mois <= '2025-06-30'
+WHERE mois >= '2025-01-01' AND mois <= '2026-02-28'
 GROUP BY month
 ORDER BY month
 ''')
 monthly = [{'month': r[0], 'total': float(r[1] or 0)} for r in cur.fetchall()]
 
-# Resource comparison (Stockage=res_id 1, Réseau=res_id 3) month by month Jan-Jun 2025
+# Resource comparison (Stockage=res_id 1, Réseau=res_id 3) month by month Jan 2025 -> Feb 2026
 cur.execute('''
 SELECT substr(mois,1,7) as month, res_id, SUM(volume) as total
 FROM consommation
-WHERE mois >= '2025-01-01' AND mois <= '2025-06-30' AND res_id IN (1,3)
+WHERE mois >= '2025-01-01' AND mois <= '2026-02-28' AND res_id IN (1,3)
 GROUP BY month, res_id
 ORDER BY month, res_id
 ''')
